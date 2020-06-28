@@ -1,0 +1,27 @@
+.main{
+    border: 2px solid lightseagreen;
+    width: 120px;
+    margin: 0 auto;
+}
+.result{
+    margin: 0 auto;
+
+    width: 95%;
+    background-color: lightslategrey;
+    color: lightyellow;
+}
+.clearbtn{
+    
+    margin: 0 auto;
+    
+    width: 98%;
+    margin-top: 5px;
+    background-color: orangered;
+
+}
+.btn{
+    margin: 0 auto;
+
+    width: 22%;
+    background-color: seagreen;
+}

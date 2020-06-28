@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="call.css">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calc-body">
-          <div class="calc-screen">
-            <div class="calc-operation">2536 + 419 + </div>
-            <div class="calc-typed">2955<span class="blink-me">_</span></div>
-          </div>
-          <div class="calc-button-row">
-            <div class="button c">C</div>
-            <div class="button l">≠</div>
-            <div class="button l">%</div>
-            <div class="button l">/</div>
-          </div>
-          <div class="calc-button-row">
-            <div class="button">7</div>
-            <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button l">x</div>
-          </div>
-          <div class="calc-button-row">
-            <div class="button">4</div>
-            <div class="button">5</div>
-            <div class="button">6</div>
-            <div class="button l">−</div>
-          </div>
-          <div class="calc-button-row">
-            <div class="button">1</div>
-            <div class="button">2</div>
-            <div class="button">3</div>
-            <div class="button l">+</div>
-          </div>
-          <div class="calc-button-row">
-            <div class="button">.</div>
-            <div class="button">0</div>
-            <div class="button">
-              </div>
-                <div class="button l">=</div>
-            </div>
-          </div>
+    <h1>CalCulator</h1>
+    <div class="main">
+        <div> 
+            <input id="result" class="result" type="text">
         </div>
-<script src="cal.js"></script>
+        <div>
+            <button onclick=" clearesult('c')" class="clearbtn">C</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getnumber('7')">7</button>
+            <button class="btn" onclick="getnumber('8')">8</button>
+            <button class="btn" onclick="getnumber('9')">9</button>
+            <button class="btn" onclick="getnumber('*')">X</button>
+
+        </div>
+        <div>
+            <button class="btn" onclick="getnumber('4')">4</button>
+            <button class="btn" onclick="getnumber('5')">5</button>
+            <button class="btn" onclick="getnumber('6')">6</button>
+            <button class="btn" onclick="getnumber('-')">-</button>
+
+        </div>
+        <div>
+            <button class="btn" onclick="getnumber('1')">1</button>
+            <button class="btn" onclick="getnumber('2')">2</button>
+            <button class="btn" onclick="getnumber('3')">3</button>
+            <button class="btn" onclick="getnumber('+')">+</button>
+
+        </div>
+        <div>
+            <button class="btn" onclick="getresult('=')">=</button>
+            <button class="btn" onclick="getnumber('0')">0</button>
+            <button class="btn" onclick="getnumber('/')">/</button>
+            <button class="btn" onclick="getnumber('%')">%</button>
+
+        </div>
+    </div>
+    <script src="cal.js"></script>
 </body>
 </html>
